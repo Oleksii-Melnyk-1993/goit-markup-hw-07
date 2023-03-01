@@ -53,10 +53,10 @@ body {
   overflow: hidden;
 }
 .container {
-  max-width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding: 0 15px;
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
   outline: 2px solid red;
 }
@@ -134,8 +134,8 @@ body {
   color: var(--hover-color);
 }
 .section {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 .headline-box {
   /* background-color: tomato;*/
@@ -268,11 +268,13 @@ body {
 }
 .secondary-list {
   display: flex;
-  align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 16px;
 }
 .secondary-item {
   list-style: none;
+  width: 264px;
 }
 .teamlist {
   background-color: #f4f4fd;
@@ -329,13 +331,16 @@ body {
   background-color: var(--hover-color);
 }
 .customers-list {
-  width: 100%px;
+  display: flex;
+  justify-content: center;
+  gap: 72px 16px;
+  flex-wrap: wrap;
+  margin-bottom: 96px;
 }
 .customers-item {
   list-style: none;
-  width: 100%;
+  width: calc((100% - 16px) / 2);
   height: 88px;
-  margin-bottom: 72px;
 }
 .customers-link {
   width: 100%;
@@ -775,11 +780,34 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 736px;
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
+  .customers-item {
+    list-style: none;
+    width: calc((100% - 48px) / 3);
+    height: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0 15px;
+  }
+  .section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .customers-item {
+    width: 168px;
+  }
+  .customers-list {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
   }
 }
