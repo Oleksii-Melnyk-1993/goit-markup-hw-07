@@ -53,12 +53,12 @@ body {
   overflow: hidden;
 }
 .container {
-  width: 1158px;
+  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
   padding: 0 15px;
   margin: 0 auto;
-  /*outline: 2px solid red;*/
+  outline: 2px solid red;
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -253,6 +253,9 @@ body {
   /* identical to box height, or 150% */
 
   letter-spacing: 0.02em;
+}
+.list-container {
+  display: none;
 }
 .secondary-headline {
   text-align: center;
