@@ -329,15 +329,13 @@ body {
   background-color: var(--hover-color);
 }
 .customers-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+  width: 100%px;
 }
 .customers-item {
   list-style: none;
-  width: 168px;
+  width: 100%;
   height: 88px;
+  margin-bottom: 72px;
 }
 .customers-link {
   width: 100%;
@@ -769,4 +767,19 @@ body {
 .policy-link:hover,
 .policy-link:focus {
   cursor: pointer;
+}
+@media screen and (min-width: 480) {
+  .container {
+    max-width: 428px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
 }
