@@ -59,6 +59,10 @@ body {
   margin: 0 auto;
   /* outline: 2px solid red; */
 }
+.section {
+  padding-bottom: 96px;
+  padding-top: 96px;
+}
 .header {
   border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
@@ -132,10 +136,7 @@ body {
 .header-contact:hover {
   color: var(--hover-color);
 }
-.section {
-  padding-bottom: 96px;
-  padding-top: 96px;
-}
+
 .headline-box {
   /* background-color: tomato;*/
   max-width: 1440px;
@@ -151,7 +152,38 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
 }
-
+.menu-open {
+}
+.open-menu-icon {
+}
+.mob-menu-container {
+  padding-left: 40px;
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.mob-menu-navigation {
+}
+.menu-close {
+}
+.close-modal-icon {
+}
+.mob-menu-list {
+}
+.mob-menu-item {
+}
+.item {
+}
+.active {
+}
+.mob-menu-address {
+}
+.mob-menu-contact {
+}
 .headline {
   color: var(--font-white-color);
   font-weight: 700;
