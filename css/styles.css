@@ -54,11 +54,10 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 1158px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -156,12 +155,12 @@ body {
 .headline {
   color: var(--font-white-color);
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  width: 507px;
-  margin: 0 auto 48px;
+  width: 320px;
+  margin: 0 auto 72px;
 }
 .headline-button {
   display: block;
@@ -189,10 +188,6 @@ body {
 .list {
   padding-top: 0;
 }
-.main-list {
-  display: flex;
-  column-gap: 24px;
-}
 
 .main-btn {
   font-family: inherit;
@@ -218,36 +213,41 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
-.main-item {
-  list-style: none;
-  width: calc(((100% - 72px) / 4));
-  margin-right: 24;
-}
+
 .main-link {
   text-decoration: none;
 }
-.main-icon {
+.section-goals {
+  padding-top: 96px;
+}
+.main-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
+  flex-wrap: wrap;
+}
+.main-list :last-child {
+  margin-bottom: 0;
+}
+.main-item {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 72px;
+}
+.main-icon {
+  display: none;
 }
 .main-title {
   color: var(--primary-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  /* identical to box height, or 120% */
-  margin-bottom: 8px;
-  margin-top: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
 }
 .main-after-title {
   color: var(--font-description-color);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   /* identical to box height, or 150% */
@@ -256,6 +256,23 @@ body {
 }
 .list-container {
   display: none;
+}
+.doing-headline {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  /* identical to box height, or 111% */
+  color: var(--primary-color);
+  margin-bottom: 72px;
+}
+.doing-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.doing-item {
+  list-style: none;
 }
 .secondary-headline {
   text-align: center;
@@ -782,6 +799,26 @@ body {
   .container {
     max-width: 736px;
   }
+  .headline {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    width: 507px;
+    margin: 0 auto 40px;
+  }
+
+  .main-list {
+    gap: 72px 24px;
+  }
+  .main-item {
+    list-style: none;
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
+  }
+  .main-title {
+    text-align: left;
+  }
   .customers-list {
     gap: 72px 24px;
   }
@@ -794,13 +831,63 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
     padding: 0 15px;
   }
   .section {
     padding-bottom: 120px;
     padding-top: 120px;
+  }
+  .headline {
+    margin-bottom: 0 auto 48px;
+  }
+  .section-goals {
+    padding-top: 120px;
+  }
+  .main-list {
+    display: flex;
+    column-gap: 24px;
+  }
+  .main-item {
+    list-style: none;
+    width: calc(((100% - 72px) / 4));
+    margin-right: 24;
+  }
+  .main-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+  }
+  .main-title {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    /* identical to box height, or 120% */
+    margin-bottom: 8px;
+    margin-top: 8px;
+    letter-spacing: 0.02em;
+  }
+  .main-after-title {
+    color: var(--font-description-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.02em;
+  }
+  .list-container {
+    display: block;
+  }
+  .secondary-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
   }
   .customers-item {
     width: 168px;
