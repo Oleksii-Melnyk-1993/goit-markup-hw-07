@@ -156,8 +156,11 @@ body {
   padding-bottom: 188px;
 }
 .menu-open {
+  border: none;
+  background-color: #ffffff;
 }
 .open-menu-icon {
+  stroke: var(--primary-color);
 }
 .mob-menu-container {
   padding-left: 40px;
@@ -172,6 +175,11 @@ body {
   background-color: white;
   padding-top: 24px;
   padding-bottom: 40px;
+  transform: translateX(100%);
+  transition: transform var(--hover-transition);
+}
+.menu-container.is-open {
+  transform: translateX(0);
 }
 
 .menu-close {
