@@ -1221,6 +1221,17 @@ body {
   .footer-logo {
     display: block;
   }
+  .social-footer-header {
+    text-align: left;
+  }
+  .subcribe-input {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .input-email {
+    width: 264px;
+  }
   .buttons {
     padding-top: 96px;
     padding-bottom: 120px;
