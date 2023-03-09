@@ -1152,6 +1152,11 @@ body {
     transition: color var(--hover-transition);
   }
   .headline {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    width: 507px;
     margin-bottom: 0 auto 48px;
   }
   .section-goals {
