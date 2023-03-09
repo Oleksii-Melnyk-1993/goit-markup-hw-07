@@ -1173,6 +1173,7 @@ body {
     list-style: none;
     width: calc(((100% - 72px) / 4));
     margin-right: 24;
+    margin-bottom: 0px;
   }
   .main-icon {
     display: flex;
