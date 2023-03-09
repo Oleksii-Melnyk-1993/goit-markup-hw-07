@@ -1111,6 +1111,19 @@ body {
         url(../images/people-office-2x.jpg);
     }
   }
+  .header-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  .header-item {
+    list-style: none;
+    position: relative;
+  }
   .header-contact-list {
     display: flex;
     gap: 40px;
@@ -1127,6 +1140,15 @@ body {
   .header-contact {
     text-decoration: none;
     color: var(--font-description-color);
+    transition: color var(--hover-transition);
+  }
+  .header-contact:focus,
+  .header-contact:hover {
+    color: var(--hover-color);
+  }
+  .item {
+    color: var(--primary-color);
+    text-decoration: none;
     transition: color var(--hover-transition);
   }
   .headline {
